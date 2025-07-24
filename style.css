@@ -142,23 +142,39 @@ nav{
 @media screen and (max-width: 576px) {
    nav, .banner-container{
       width: 80%;
-      margin: 30px auto;
+      margin: auto;
    }
    nav ul li{
       display: none;
    }
 
    .banner-container{
-      margin-top: 1rem;
+      width: 100%;
       display: flex;
       flex-direction: column-reverse;
-      gap: 1rem;
    }
 
-   .banner-image img{
+   .banner-info{
       width: 100%;
+      margin: 0 auto;
    }
+
    .banner-heading{
       font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0 1rem;
+   }
+
+   .banner-description{
+      font-size: .9rem;
+      margin: 0 1rem;
+   }
+
+   .banner-image{
+      width: 100%;
+   }
+   .banner-image img{
+      width: 100%;
+      margin: 1.8rem 0;
    }
 }

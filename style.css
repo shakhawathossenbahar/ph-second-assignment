@@ -24,7 +24,9 @@
    color: #000000;
 }
 
-
+.primary-color{
+   color: #E95A08;
+}
 
 
 
@@ -39,6 +41,12 @@ html, body {
    height: 100%;
    width: 100%;
 }
+
+header{
+   width: 100%;
+}
+
+
 
 
 /* Nav Styles */
@@ -80,6 +88,51 @@ nav{
 
 
 
+.banner-container{
+   max-width: 1140px;
+   margin: 0 auto;
+   display: flex;
+   align-items:last baseline;
+   justify-content: space-between;
+}
+
+.banner-info{
+   width: 50%;
+}
+
+.banner-image{
+   width: 50%;
+}
+
+.banner-heading{
+   font-size: 4rem;
+}
+.always{
+   font-weight: 700;
+}
+
+.fresh-flower{
+   font-weight: 700;
+}
+
+.banner-description{
+   font-size: 1.38rem;
+   color: rgba(0, 0, 0, 0.5);
+   margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -87,17 +140,25 @@ nav{
 
 
 @media screen and (max-width: 576px) {
-   nav{
+   nav, .banner-container{
       width: 80%;
       margin: 30px auto;
    }
-   .home{
+   nav ul li{
       display: none;
    }
-   .shop{
-      display: none;
+
+   .banner-container{
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 1rem;
    }
-   .about-us{
-      display: none;
+
+   .banner-image img{
+      width: 100%;
+   }
+   .banner-heading{
+      font-size: 1.5rem;
    }
 }

@@ -73,21 +73,22 @@ body{
    text-decoration: none;
    text-align: center;
  }
- 
- nav i{
-    margin-left:  2rem;
-   
- }
+
+nav i{
+  margin-left:  2rem;
+}
  /* !nav ends here */
- 
+
+
+
  /* !header intro starts here  */
- 
- .header-intro {
+
+.header-intro {
    margin-top: 8rem;
    display: flex;
    justify-content: space-between;
-   align-items: center;
-   gap: 8rem;
+   align-items: last baseline;
+   /* gap: 8rem; */
  }
  
  .details h1{

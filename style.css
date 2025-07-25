@@ -52,11 +52,6 @@
    box-sizing: border-box;
 }
 
-html, body {
-   height: 100%;
-   width: 100%;
-}
-
 header{
    width: 100%;
 }
@@ -102,6 +97,7 @@ nav{
 }
 
 
+/* Banner Style */
 
 .banner-container{
    max-width: 1140px;
@@ -265,15 +261,23 @@ nav{
       font-weight: 400;
       font-size: 0.9rem;
    }
-   
-   .card-container{
-      width: 100%;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+
+   .card h4, .card h5{
+      font-size: 1rem;
    }
 
-   .card{
-      width: 50%;
+   .card-container {
+      grid-template-columns: repeat(2, 1fr); /* Only 1 card per row on small screens */
+   }
+
+   .card {
+      width: 100%; /* Full width for card */
+      margin: 0 auto 30px auto; /* Centered with space below */
+   }
+
+   .card-image {
+      width: 100%;
+      height: auto;
+      display: block;
    }
 }

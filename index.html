@@ -1,108 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- font awsome cdn -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="style.css">
-   <title>Responsive Flowers</title>
+  <title>Flower Shop</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header>
-      <!-- Nav -->
-      <nav class="inter">
-         <img src="./assets/logo.png" alt="flower shop logo">
-         <div class="nav-links">
-            <ul>
-               <li><a href="#" class="nav-link home">Home</a></li>
-               <li><a href="#" class="nav-link shop">Shop</a></li>
-               <li><a href="#" class="nav-link about-us">About us</a></li>
-            <div class="cart">
-                  <i class="fas fa-shopping-cart"></i> <span>Cart ($56)</span>
-            </div>
-            </ul>
-         </div>
-      </nav>
+<header>
 
-      <!-- Banner -->
-      <div class="banner-container">
-         <div class="banner-info">
-            <h2 class="noto-serif banner-heading"><span class="always pure-black">ALWAYS </span> <span class="fresh-flower primary-color">FRESH<br>FLOWERS</span></h2>
-            <h5 class="inter light-black banner-description">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </h5>
-         </div>
-         <div class="banner-image">
-            <img src="./assets/hero-flower.png" alt="">
-         </div>
-      </div>
-   </header>
+   <!--! nav -->
+  <nav class="flex">
+    <img src="assets/logo.png" alt="">
+    <div class="flex">
+      <ul >
+      <li><a  href="">Home</a></li>
+      <li><a class="ash-color" href="">Shop</a></li>
+      <li><a class="ash-color" href="">About us</a></li>
+     
+    </ul>
+    <div>
+       <i class="fa-solid fa-cart-shopping "></i>Cart ($56)
+     </div></div>
+  </nav>
 
-   
+  <!--! header intro-->
+  <div class="header-intro ">
+    <div class="details">
+      <h1>ALWAYS <span class="orange-color">FRESH <br> FLOWERS</span></h1>
+      <p class="ash-color">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
+    </div>
+    <img src="assets/hero-flower.png" alt="">
+  </div>
+</header>
+
 <main>
-   <!-- Plants Section -->
-   <section class="plant-container">
-      <h2 class="plant-title noto-serif pure-black"><span class="primary-color">Our </span>Plants                </h2>
-      <h5 class="plant-description inter light-black">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</h5>
-      <div class="card-container inter">
-         <!-- .card*12>{<img class="card-image" src="./assets/sample-flower-image.png" alt="">}+h4{Lily Blossom}+h5{20 USD}+button{ADD TO CART}.btn -->
-         <div class="card">
-            <img class="card-image" src="./assets/sample-flower-image.png" alt="">
-            <h4>Lily Blossom</h4>
-            <h5>20 USD</h5>
-            <button class="btn">ADD TO CART</button>
-         </div>
-         <div class="card">
-            <img class="card-image" src="./assets/sample-flower-image.png" alt="">
-            <h4>Lily Blossom</h4>
-            <h5>20 USD</h5>
-            <button class="btn">ADD TO CART</button>
-         </div>
-         <div class="card">
-            <img class="card-image" src="./assets/sample-flower-image.png" alt="">
-            <h4>Lily Blossom</h4>
-            <h5>20 USD</h5>
-            <button class="btn">ADD TO CART</button>
-         </div>
-         <div class="card">
-            <img class="card-image" src="./assets/sample-flower-image.png" alt="">
-            <h4>Lily Blossom</h4>
-            <h5>20 USD</h5>
-            <button class="btn">ADD TO CART</button>
-         </div>
-         <div class="card">
-            <img class="card-image" src="./assets/sample-flower-image.png" alt="">
-            <h4>Lily Blossom</h4>
-            <h5>20 USD</h5>
-            <button class="btn">ADD TO CART</button>
-         </div>
-         <div class="card">
-            <img class="card-image" src="./assets/sample-flower-image.png" alt="">
-            <h4>Lily Blossom</h4>
-            <h5>20 USD</h5>
-            <button class="btn">ADD TO CART</button>
-         </div>
-         <div class="card">
-            <img class="card-image" src="./assets/sample-flower-image.png" alt="">
-            <h4>Lily Blossom</h4>
-            <h5>20 USD</h5>
-            <button class="btn">ADD TO CART</button>
-         </div>
-         <div class="card">
-            <img class="card-image" src="./assets/sample-flower-image.png" alt="">
-            <h4>Lily Blossom</h4>
-            <h5>20 USD</h5>
-            <button class="btn">ADD TO CART</button>
-         </div>
+  <!-- !main-intro starts here -->
+  <div class="main-intro">
+    <h1 class="heading"><span class="orange-color">Our </span>Plants</h1>
+    <p class="ash-color">Indulge your senses with the beauty and fragrance of our fresh flower shop. From <br class="line-gap"> classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+  </div>
+  <!-- !main-intro ends here -->
+
+  <!-- ?main-cards starts here -->
+   <div class="main-cards">
+    <div class="cards">
+      <img src="assets/sample-flower-image.png" alt="FLOWER VASE">
+      <div class="cards-detais">
+          <h3>Lily Blossom</h3>
+          <p>20 USD</p>
       </div>
-   </section>
+      <button class="btn">ADD TO CARD</button>
+    </div>
+
+    <div class="cards">
+      <img src="assets/sample-flower-image.png" alt="FLOWER VASE">
+      <div class="cards-detais">
+          <h3>Lily Blossom</h3>
+          <p>20 USD</p>
+      </div>
+      <button class="btn">ADD TO CARD</button>
+    </div>
+
+    <div class="cards">
+      <img src="assets/sample-flower-image.png" alt="FLOWER VASE">
+      <div class="cards-detais">
+          <h3>Lily Blossom</h3>
+          <p>20 USD</p>
+      </div>
+      <button class="btn">ADD TO CARD</button>
+    </div>
+
+    <div class="cards">
+      <img src="assets/sample-flower-image.png" alt="FLOWER VASE">
+      <div class="cards-detais">
+          <h3>Lily Blossom</h3>
+          <p>20 USD</p>
+      </div>
+      <button class="btn">ADD TO CARD</button>
+    </div>
+
+    <div class="cards">
+      <img src="assets/sample-flower-image.png" alt="FLOWER VASE">
+      <div class="cards-detais">
+          <h3>Lily Blossom</h3>
+          <p>20 USD</p>
+      </div>
+      <button class="btn">ADD TO CARD</button>
+    </div>
+
+    <div class="cards">
+      <img src="assets/sample-flower-image.png" alt="FLOWER VASE">
+      <div class="cards-detais">
+          <h3>Lily Blossom</h3>
+          <p>20 USD</p>
+      </div>
+      <button class="btn">ADD TO CARD</button>
+    </div>
+
+    <div class="cards card-hidden">
+      <img src="assets/sample-flower-image.png" alt="FLOWER VASE">
+      <div class="cards-detais">
+          <h3>Lily Blossom</h3>
+          <p>20 USD</p>
+      </div>
+      <button class="btn">ADD TO CARD</button>
+    </div>
+
+    <div class="cards card-hidden">
+      <img src="assets/sample-flower-image.png" alt="FLOWER VASE">
+      <div class="cards-detais">
+          <h3>Lily Blossom</h3>
+          <p>20 USD</p>
+      </div>
+      <button class="btn">ADD TO CARD</button>
+    </div>
+    
+   </div>
+
+   <!-- !trusted seller starts here -->
+    <div class="trusted-seller">
+      <div class="logo">
+        <img src="assets/trusted-badge.png" alt="logo">
+      </div>
+      <div class="img-details-part">
+        <div class="img-part">
+        <img src="assets/flower-store.png" alt="">
+      </div>
+      <div class="details-part">
+        <h1 class="heading">
+          Flower & Plants Lover
+        </h1>
+        <ul class="ash-color">
+          <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+          <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+          <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+        </ul>
+      </div>
+      </div>
+   </div>
+
+    <!--?LATEST deals and blar-flower starts here  -->
+   <div class="main-intro">
+     <h1 class="heading"><span class="orange-color">Latest </span> Deals</h1>
+    <p class="ash-color">Indulge your senses with the beauty and fragrance of our fresh flower shop. From <br>classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+   </div>
+
+
+   <div class="flower-img-part">
+    <div class="double-img">
+
+     <div class="image-box">
+    <img src="assets/deal-bloom.png" alt="">
+    <div class="blar-div">
+      <h1>60% Off | Bloom Plant</h1>
+      <a href="#">Shop Now</a>
+    </div>
+     </div>
+
+     <div class="image-box ">
+    <img src="assets/deal-ana.png" alt="">
+    <div class="blar-div">
+      <h1>30% Off | Ana Plant</h1>
+      <a href="#">Shop Now</a>
+    </div>
+     </div>
+
+
+     
+
+    </div>
+
+    <div class="zabo-plant">
+       <img src="assets/deal-zabo.png" alt="">
+    <div class="blar-div-zabo">
+      <h1>25% Off | Zabo Plant</h1>
+      <a href="#">Shop Now</a>
+    </div>
+
+      
+
+
+
+
+
+
+
+
+
+    
+   </div>
+
+
+  
+
+
+    <!--?LATEST deals and blar-flower ends here  -->
 </main>
 
-   <main>
+<footer>
+   <div class="footer-subscribe">
+    <h1 class="heading">Join the colorful Bunch</h1>
+    <form action="">
+      <input id="email-form" placeholder="Write email" type="email" name="" id="">
+       <input class="btn" id="btn"  type="button" value="Subscribe">
+    </form>
+   
+  </div>
 
-   </main>
+  <div class="footer-last flex">
+    <div class="company">
+      <img src="assets/logo.png" alt="">
+      <p class="ash-color">Indulge your senses with the beauty and fragrance of our fresh flower shop. </p>
+    </div>
+   
+    <!-- <div class="footer-list"> -->
+      <ul class="ash-color">
+        <li>Home</li>
+        <li>About us</li>
+        <li>Blog</li>
+        <li>FAQ</li>
+        <li>Contact us</li>
+      </ul>
+      <ul class="ash-color">
+        <li>Features</li>
+        <li>Pricing</li>
+        <li>Privacy Policy</li>
+        <li>Terms of Service</li>
+        <li>Help Center</li>
+      </ul>
+    <!-- </div> -->
 
-
-   <footer>
-
-   </footer>
+    <div class="icon">
+      <img src="assets/icon-linkedin.png" alt="">
+      <img class="twitter" src="assets/icon-twitter.png" alt="">
+      <img src="assets/icon-facebook.png" alt="">
+      <img src="assets/icon-youtube.png" alt="">
+    </div>
+  </div>
+</footer> 
 </body>
 </html>

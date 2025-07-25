@@ -1,283 +1,494 @@
-/* Noto Serif - font */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
-.noto-serif{
-   font-family: "Noto Serif", serif;
-   font-optical-sizing: auto;
-   font-style: normal;
-   font-variation-settings:
-   "wdth" 100;
-}
-
-/* Inter - font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-.inter{
-   font-family: "Inter", sans-serif;
-   font-optical-sizing: auto;
-   font-style: normal;
-}
-
-
-/* Shared styles */
-
-.pure-black{
-   color: #000000;
-}
-
-.primary-color{
-   color: #E95A08;
-}
-
-.light-black{
-   color: rgba(0, 0, 0, 0.5);
-}
-
-.btn{
-   color: white;
-   background-color: #E95A08;
-   width: 270px;
-   height: 50px;
-   padding: 26px 50px;
-   font-weight: 500;
-   font-size: 16px;
-   border: none;
-}
-
-
-
-
 *{
-   margin: 0%;
-   padding: 0%;
+   margin: 0;
+   padding: 0;
    box-sizing: border-box;
 }
 
-header{
+
+/* shared style */
+
+.ash-color{
+   color: #8987A1;
+}
+.orange-color{
+   color: #E95A08;
+}
+
+.flex{
+   display: flex;
+}
+
+.heading{
+   color: black;
+   font-size: 3rem;
+   font-weight: bold;
+   margin-bottom:1.5rem ;
+}
+
+.btn{
+   padding: 1rem 2rem;
    width: 100%;
+   background-color: #E95A08;
+   color: white;
+   font-weight: 600;
+   border: none;
+   margin-top: 1rem;
+   /* width:100% ; */
 }
 
 
-
-
-/* Nav Styles */
-
-nav{
-   max-width: 1140px;
-   margin: 30px auto 120px auto;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
+.hidden{
+   display: none;
 }
 
-.nav-links ul{
-   display: flex;
+body{
+    font-family: "Inter", sans-serif;
+     overflow-x: hidden;
+ }
+ 
+ 
+ header,
+ main,
+ .footer-last{
+    max-width: 1140px;
+    margin: 1rem auto;
+ }
+ /* !nav starts here */
+ nav{
+  
    justify-content: space-between;
    align-items: center;
-   padding: 18px 0px;
-   gap: 48px;
+ }
+ 
+ nav ul{
    list-style: none;
-   text-decoration: none;
-}
-
-.nav-link{
-   text-decoration: none;
+   display: flex; 
+   gap: 2rem;
+  
+ }
+ 
+ nav ul li a{
    
-}
-
-.home{
-   color: #252432;
-}
-
-.shop{
-   color: #8987A1;
-}
-
-.about-us{
-   color: #8987A1;
-}
-
-
-/* Banner Style */
-
-.banner-container{
-   max-width: 1140px;
-   margin: 0 auto;
+   color: black;
+   text-decoration: none;
+   text-align: center;
+ }
+ 
+ nav i{
+    margin-left:  2rem;
+   
+ }
+ /* !nav ends here */
+ 
+ /* !header intro starts here  */
+ 
+ .header-intro {
+   margin-top: 8rem;
    display: flex;
-   align-items:last baseline;
    justify-content: space-between;
-}
-
-.banner-info{
-   width: 50%;
-}
-
-.banner-image{
-   width: 50%;
-}
-
-.banner-heading{
+   align-items: center;
+   gap: 8rem;
+ }
+ 
+ .details h1{
    font-size: 4rem;
-}
-.always{
-   font-weight: 700;
-}
-
-.fresh-flower{
-   font-weight: 700;
-}
-
-.banner-description{
-   font-size: 1.38rem;
-   font-weight: 400;
-   margin: 0 auto;
-}
-
-
-/* Plants Section */
-.plant-container{
-   max-width: 1140px;
-   margin: 120px auto 210px auto;
-}
-
-.plant-title{
-   font-weight: 700;
-   font-size: 3.2rem;
+   font-family: "Noto Serif", serif;
+   font-weight: bold;
+   margin-bottom: 1rem;
+     
+ }
+ 
+ /* !header intro ends here  */
+ 
+ /* !main starts here */
+ .main-intro{
+   margin-top:8rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    text-align: center;
-}
-
-.plant-description{
-   font-weight: 400;
-   font-size: 1.4rem;
-   text-align: center;
-   max-width: 888px;
-   margin: 1rem auto 3.1rem auto;
-}
-
-.card-container{
+ }
+ /* !main ends here */
+ .main-cards{
+   margin-top:2rem ;
    display: grid;
-   grid-template-columns: repeat(4, 1fr);
+   grid-template-columns: repeat(4, 1fr); 
+   gap: 1rem;
+   
+ }
+ 
+ .cards{
+  margin-top: 2rem;
+   
+ }
+ 
+ .cards-detais{
+   text-align: center;
+ }
+ 
+ .cards h3{
+   font-size: 1.3rem;
+   margin-top: 1rem;
+   font-weight: 400;
+ }
+ .cards p{
+   margin-top:1rem ;
+    font-size: 1.3rem;
+    font-weight: bold;
+ }
+ /* !trusted-seller starts here */
+ .logo img {
+   width: 286px;
+   height: 286px;
+   filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.6));
+ }
+ .trusted-seller{
+   position: relative;
+   margin-top: 15rem;
+ }
+ .logo{
+   position: absolute;
+   top: -8rem;
+   left: 25rem;
+ }
+ .img-details-part{
+   /* border: 1px solid red; */
+   display: flex;
+   justify-content: space-between;
+   gap:8rem;
+   align-items: center;
+ }
+ .details-part li{
+   padding-bottom: 1rem;
+   font-size: 1.3rem;
+ }
+ 
+ /* !latest deals start here */
+ 
+ 
+ .flower-img-part{
+   margin-top: 4rem;
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   gap: 1.7rem;
+ }
+ 
+  .double-img {
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+   gap: 1.5rem;
+ }
+ 
+ .double-img img,
+ .zabo-plant img {
+   border-radius: 1.2rem;
+ }
+ 
+ .zabo-plant {
+   position: relative;
+   height: 100%;
+   width: 100%;
+   border-radius: 1.2rem;
+   overflow: hidden;
+ }
+ 
+ .blar-div-zabo{
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 98%;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.4);
+   color: white;
+   text-align: center;
+   padding-top: 7rem;
+   font-size: 1.3rem;
+   border-radius: 1.2rem;
+ }
+ 
+ .blar-div-zabo a {
+   color: white;
+   font-size: 1.4rem;
+ }
+ .double-img {
+   display: grid;
    gap: 20px;
-}
-
-.card{
-   height: 485px;
-   width: 270px;
-   margin-bottom: 30px;
-}
-.card>h4{
-   font-weight: 500;
-   font-size: 1.4rem;
-   color: #111111;
-   margin-top: 1.9rem;
+ }
+ 
+ .image-box {
+   position: relative;
+   height: 206px;
+   width: 366px;
+   border-radius: 1.2rem;
+   overflow: hidden;
+ }
+ 
+ .image-box img {
+   height: 100%;
+   width: 100%;
+   border-radius: 1.2rem;
+ }
+ 
+ .blar-div{
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.4);
+   color: white;
    text-align: center;
-}
-
-.card>h5{
-   font-weight: 700;
-   font-size: 1.4rem;
-   color: #111111;
-   margin: 20px auto 30px auto;
+   padding-top: 3rem;
+   font-size: 0.6rem;
+   border-radius: 1.2rem;
+ }
+ 
+ .blar-div h1,
+ .blar-div-zabo h1 {
+   margin-bottom: 1.5rem;
+ }
+ 
+ .blar-div a {
+   color: white;
+   font-size: 1rem;
+ }
+ 
+ /* footer-form start */
+ .footer-subscribe{
+   margin-top: 3rem;
+   max-width: 100%;
+   min-height:533px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-image: url(assets/news-letter-bg.png);
+   background-repeat: no-repeat;
+  background-size: cover;
+ 
+ }
+ .footer-subscribe h1{
+   color: aliceblue;
+ }
+ .footer-subscribe form  {
+ display: flex;
+ align-items: center;
+ }
+ 
+ #email-form{
+   width: 646px;
+   height: 3rem;
+   padding-left: 1rem;
+ }
+ 
+ #btn{
+   width: 186px;
+   height: 3rem;
+   margin-top: 0;
+ }
+ 
+ 
+ /* ?footer last */
+ .footer-last{
+   margin-top: 5rem;
+   display: flex;
+   gap: auto;
+   justify-content: space-between;
+   
+ }
+ 
+ .footer-last ul
+ {
+   list-style: none;
+ }
+ .footer-last ul li{
+   padding-bottom: 2.5rem ;
+  
+ }
+ 
+ .company{
+   /* border: 1px saddlebrown solid; */
+   width: 32%;
+   
+   
+ }
+ .company p{
+   font-size: 22px;
+   margin-top: 1.5rem;
+ }
+ .icon img{
+   padding-left: 1.5rem;
+   
+ }
+ 
+ .twitter{
+   
+   margin-bottom: 0.5rem;
+ }
+ /* responsive area */
+ 
+ @media (max-width: 576px) {
+   
+   nav,.header-intro,.main-cards {
+    max-width: 100%;
+     }
+    nav,
+   .details h1,
+   .details p,
+   .main-cards,
+   .img-details-part,
+   .flower-img-part{
+   margin: 1rem;
+ }
+ 
+   .details h1,
+   .heading{
+     font-size: 1.5rem;
+   }
+   /* ?nav */
+   nav ul{
+   display:none;
+ }
+ nav i{
    text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 576px) {
-   nav, 
-   .banner-container, 
-   .plant-container{
-      width: 80%;
-      margin: auto;
+   font-size: 1.5rem;
+  
+ }
+ /* ?header intro */
+   .header-intro {
+   margin-top: 1rem;
+   display: flex;
+   flex-direction: column-reverse;
+   gap: 1rem;
+ }
+ .header-intro img{
+   width: 100%;
+ }
+ 
+ 
+ 
+ /* ?main intro */
+ 
+ .main-intro{
+   margin-top:5rem;
+  
+   
+ }
+ .main-intro p{
+  max-width: 400px;
+ }
+ .line-gap{
+   display: none;
+ }
+ 
+ /* ?main-card */
+ .main-cards{
+   
+   grid-template-columns: repeat(2, 1fr); 
+  
+ }
+ 
+ .cards h3,p{
+   font-size: 1rem;
+ }
+ .cards p{
+   padding: 0 2rem;
+ }
+ .cards img{
+   width: 100%;
+ }
+ .card-hidden{
+   display: none;
+ }
+ 
+ /* ?trusted part */
+ .trusted-seller{
+   margin-top:3.5rem;
+ }
+ .logo{
+   display: none;
+ }
+ .img-details-part{
+   flex-direction: column;
+   gap: 1.2rem;
+ }
+ .img-part img{
+   width:100%;
+ }
+ 
+ .details-part ul{
+   padding: 0 1rem;
+ }
+ .details-part li{
+   font-size: 0.9rem;
+   
+ }
+ 
+ /* ?latest deal+flower img part */
+ 
+  .flower-img-part {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    
    }
-
-   /* Nav Section */
-   nav ul li{
-      display: none;
+ 
+   .image-box{
+     width: 100%;
    }
-
-   /* Banner Section */
-   .banner-container{
-      width: 100%;
-      display: flex;
-      flex-direction: column-reverse;
-      margin-bottom: 4rem;
+   .double-img {
+    width: 100%;
    }
-
-   .banner-info{
-      width: 100%;
-      margin: 0 auto;
+   .zabo-plant{
+     max-height:226px ;
    }
-
-   .banner-heading{
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin: 0 1rem;
-      margin-bottom: .8rem;
+ .blar-div-zabo{
+   
+   padding-top: 3rem;
+    font-size: 0.6rem;
+   height: 100%;
+ }
+ 
+ .blar-div-zabo a{
+   font-size: 1rem;
+ }
+   
+  
+   /* ?footer-subscribe */
+   .footer-subscribe{
+     min-height:276px ;
    }
-
-   .banner-description{
-      font-size: .9rem;
-      margin: 0 1rem;
-   }
-
-   .banner-image{
-      width: 100%;
-   }
-   .banner-image img{
-      width: 100%;
-      margin: 1.8rem 0;
-   }
-
-
-   /* Plants Section */
-   .plant-title{
-      font-weight: 700;
-      font-size: 1.5rem;
-   }
-
-   .plant-description{
-      font-weight: 400;
-      font-size: 0.9rem;
-   }
-
-   .card h4, .card h5{
-      font-size: 1rem;
-   }
-
-   .card-container {
-      grid-template-columns: repeat(2, 1fr); /* Only 1 card per row on small screens */
-   }
-
-   .card {
-      width: 100%; /* Full width for card */
-      margin: 0 auto 30px auto; /* Centered with space below */
-   }
-
-   .card-image {
-      width: 100%;
-      height: auto;
-      display: block;
-   }
+ form{
+   margin: 0 1rem;
+ }
+ 
+ #email-form{
+   width:100%;
+   height:50px;
+   padding-left: 1rem;
+ }
+ 
+ #btn{
+    width: 40%;
+   height: 50px;
+   margin-top: 0;
+ }
+ 
+ .footer-last{
+   flex-direction: column;
+   margin: 3rem 1rem;
+ }
+ 
+ .company{
+   /* border: 1px saddlebrown solid; */
+   width: 100%;
+   
+ 
+ }
+ 
+ .icon img{
+   
+   padding-left: 0;
+   padding-right: 1.5rem;
+ }
 }
